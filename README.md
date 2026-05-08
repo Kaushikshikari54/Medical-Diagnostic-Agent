@@ -29,6 +29,23 @@ The diagnostic accuracy is determined by the alignment between the Visual Featur
 - The model minimizes the distance between the projected image features and the ground-truth report labels.
 - The Projection Bridge is trained using Cross-Entropy loss to classify the image into the most appropriate diagnostic category defined in the training metadata.
 
+### Demo
+Below are the visual representations of the system in operation:
+
+#### Diagnostic Output
+![Multifocal bacterial pneumonia](screenshots/Multifocal-bacterial-pneumonia.png)
+
+#### Diagnostic Output
+![Normal](screenshots/Normal.png)
+
+#### Diagnostic Output
+![Bacterial pneumonia](screenshots/Bacterial-pneumonia.png)
+
+#### Diagnostic Output
+![Localized pneumonia](screenshots/Localized-pneumonia.png)
+
+#### Diagnostic Output
+![Cardiomegaly](screenshots/Cardiomegaly.png)
 ### Project Structure
 ```text
 Medical-diagnostic-agent/
