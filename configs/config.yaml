@@ -1,0 +1,32 @@
+# ==========================================
+# PRO-LEVEL CONFIGURATION FILE
+# ==========================================
+
+# 1. General Project Information
+project_name: "Multimodal-Medical-Agent-v1"
+author: "AI-Specialist-Student"
+
+# 2. Path Management (The "Map" for your project)
+paths:
+  image_dir: "data/raw"              # Where you put the X-ray PNG/JPG files
+  metadata_csv: "data/raw/metadata.csv" # The CSV linking images to reports
+  model_save_path: "models/checkpoints" # Where we will save the AI's learning
+
+# 3. Vision Backbone Settings (The "Eyes")
+vision:
+  model_name: "efficientnet_b0"      # Professional, lightweight CNN
+  img_size: 224                      # EfficientNet-B0 standard resolution
+  batch_size: 16                     # Standard for small/mid-range GPUs
+  output_dim: 1280                   # The feature size from the CNN
+
+# 4. LLM Configuration (The "Brain")
+llm:
+  model_id: "meta-llama/Llama-3-8B"   # The target reasoning model
+  input_dim: 4096                    # Standard dimension for Llama-3 tokens
+  max_length: 512                    # Max length of the medical report text
+  device: "cpu"                      # Change to "cuda" if you have an NVIDIA GPU
+
+# 5. Training Hyperparameters (For later phases)
+training:
+  learning_rate: 0.0001              # Slow learning to keep the medical report stable
+  epochs: 10                         # How many times to look at the dataset

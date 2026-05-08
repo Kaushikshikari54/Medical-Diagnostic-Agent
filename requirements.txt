@@ -1,0 +1,12 @@
+torch
+torchvision
+transformers
+accelerate
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+pyyaml
+opencv-python
+matplotlib
+pandas

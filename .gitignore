@@ -1,0 +1,40 @@
+# --- Python Environment ---
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- Large Model Weights (Keep repo light) ---
+models/checkpoints/*.pth
+models/checkpoints/*.bin
+models/checkpoints/*.h5
+*.weights
+
+# --- Data Handling ---
+data/processed/
+# Ignore all raw data except the essential metadata and demo images
+data/raw/*
+!data/raw/metadata.csv
+!data/raw/sample.*.jpg
+!data/raw/test_image.jpg
+
+# --- Frontend (React) ---
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+.pnp.js
+frontend/coverage/
+frontend/.eslintcache
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+Thumbs.db
+
+# --- Environment Secrets ---
+.env
+.env.local
